@@ -52,4 +52,4 @@ document.addEventListener("click", (e) => {
 ### Language competencies
 
 - Russian: native language
-- English: not a A1, but something in-between this and a B1.
+- English: something in-between an A2 and a B1.
