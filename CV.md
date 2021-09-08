@@ -12,7 +12,7 @@ Hello, I’m a Viktor, aspiring web developer based in Omsk. I have some experie
 - Web libs: Bootstrap, jQuery, Materialize;
 - Responsive design;
 - Web Dev tools: Gulp, npm;
-- VCS: Git basics;
+- VCS: Git, Github;
 - DB: MongoDB Atlas (basic set of queries);
 - Graphic editors: Photoshop, Figma, GWD;
 - Search engine optimization
@@ -43,3 +43,13 @@ document.addEventListener("click", (e) => {
   }
 });
 ```
+
+### Education
+
+- Faculty of Economics and Management, Omsk State Technical University, Russian Federation
+  - September 2000 - July 2005
+
+### Language competencies
+
+- Russian: native language
+- English: not a A1, but something in-between this and a B1.
