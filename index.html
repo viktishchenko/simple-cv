@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Viktor Tishchenko HTML version</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="content">
+    <header class="promo">
+      <div class="layout-2-col">
+        <div class="promo__info">
+          <span class="promo__greet">Hello I'm</span>
+          <h1 class="promo__title">Viktor Tishchenko</h1>
+          <p class="promo__text">Aspiring web developer</p>
+          <ul class="contact-list">
+            <li>
+              <a class="contact-list__link" href="mailto:web22pro@gmail.com"
+                ><span class="icon icon-mail"></span> web22pro@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-list__link" href="tel:+7 904 325 8451"
+                ><span class="icon icon-phone"></span>+7 904 325 8451</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <span class="icon icon-location"></span>
+              <address>Omsk, Russian Federation</address>
+            </li>
+          </ul>
+          <ul class="contact-list social">
+            <li>
+              <a
+                class="contact-list__link social-link"
+                href="http://facebook.com"
+                ><span class="icon icon-social icon-facebook"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                class="contact-list__link social-link"
+                href="http://twitter.com"
+                ><span class="icon icon-social icon-twitter"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                class="contact-list__link social-link"
+                href="http://twitter.com"
+                ><span class="icon icon-social icon-github"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="promo-img">
+          <img src="./assets/images/avablue.png" alt="avatar" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <h2 class="section-title">About me</h2>
+        <p class="section-text">
+          Hello, I’m a Viktor, aspiring web developer based in Omsk. I have some
+          experience in designing, building and customizing websites. Currently
+          studying «JavaScript/Front-end» at RS School.
+        </p>
+        <h2 class="section-subtitle">Technical skills</h2>
+        <ul class="tags-list tags">
+          <li class="tag-list__item">
+            Language: <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Javascript</span
+            ><span class="text-light"> (basic); </span>
+          </li>
+          <li class="tag-list__item">
+            Web libs: <span class="tag">Bootstrap</span>
+            <span class="tag">jQuery</span>
+            <span class="tag">Materialize</span>
+          </li>
+          <li class="tag-list__item">Responsive design;</li>
+          <li class="tag-list__item">
+            Web Dev tools: <span class="tag">Gulp</span>
+            <span class="tag">npm</span>
+          </li>
+          <li class="tag-list__item">
+            VCS: <span class="tag">Git</span>
+            <span class="tag">Github</span>
+          </li>
+          <li class="tag-list__item">
+            DB: <span class="tag">MongoDB Atlas</span
+            ><span class="text-light"> (basic set of queries); </span>
+          </li>
+          <li class="tag-list__item">
+            Graphic editors: <span class="tag">Photoshop</span>
+            <span class="tag">Figma</span>
+            <span class="tag">GWD</span>
+          </li>
+          <li class="tag-list__item">Search engine optimization</li>
+        </ul>
+      </section>
+      <section class="coder">
+        <h2 class="section-title">Code example</h2>
+        <pre class="coder__highlight">
+              <code>
+const openBtn = document.querySelectorAll("[data-open]");
+const closeBtn = document.querySelectorAll("[data-close]");
+const isVisible = "is-visible";
+
+for (const el of openBtn) {
+  el.addEventListener("click", function () {
+    const modalName = this.dataset.open;
+    document.getElementById(modalName).classList.add(isVisible);
+  });
+}
+
+for (const el of closeBtn) {
+  el.addEventListener("click", function () {
+    this.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+
+document.addEventListener("click", (e) => {
+  if (e.target === document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
+</code>
+          </pre>
+      </section>
+      <section class="education">
+        <h2 class="section-title">Education</h2>
+        <p class="section-text">
+          Faculty of Economics and Management <br />
+          Omsk State Technical University, Russian Federation
+          <span class="text-light"> (September 2000 - July 2005) </span>
+        </p>
+      </section>
+      <section class="language">
+        <h2 class="section-title">Language competencies</h2>
+        <p>Russian: <span class="section-text">native language</span></p>
+        <p>
+          English:
+          <span class="section-text">something in-between an A2 and a B1</span>
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <a
+        href="https://github.com/viktishchenko"
+        target="_blank"
+        class="contact-list__link"
+        ><span class="icon-git"></span>Visit my github</a
+      >
+      <p class="footer-text">© 2021</p>
+      <a href="https://rs.school/js/" class="contact-list__link"
+        ><span class="icon-rsschool"></span
+      ></a>
+    </footer>
+  </body>
+</html>
