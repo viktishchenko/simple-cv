@@ -3,6 +3,7 @@
   --primary-colir: #2196f3;
   --text-color: #212529;
   --text-light: #7d7d7d;
+  --tag-color: #eff1f3;
   --color-dark: #000;
   --color-white: #fff;
   --border-dark: rgba(0, 0, 0, 0.17);
@@ -46,11 +47,11 @@ a {
   border: 1px solid aliceblue;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   padding: 25px 40px;
-  margin: 30px auto 70px;
+  margin: 30px auto;
 }
 
 .promo {
-  padding: 40px 0;
+  padding: 30px 15px;
 }
 .layout-2-col {
   display: flex;
@@ -65,7 +66,7 @@ a {
 .promo__greet {
   padding: 10px 30px;
   background-color: var(--primary-colir);
-  font-size: 14px;
+  font-size: 1.6rem;
   line-height: 24px;
   letter-spacing: 1px;
   font-weight: bold;
@@ -78,14 +79,14 @@ a {
 .promo__title {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 42px;
+  font-size: 4.2rem;
   font-weight: 600;
   line-height: 52px;
   white-space: nowrap;
 }
 .promo__text {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 24px;
 }
 .contact-list li {
@@ -171,6 +172,85 @@ address {
   border-radius: 50%;
 }
 
+.about {
+  padding: 30px 15px;
+}
+.section-title {
+  font-size: 3.3rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+.section-subtitle {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  opacity: 0.8;
+}
+.section-text {
+  padding-bottom: 16px;
+  opacity: 0.8;
+}
+.tags {
+  margin-left: 50px;
+}
+.tags-list {
+  opacity: 0.8;
+}
+.tag-list__item {
+  list-style: square;
+}
+.tag {
+  padding: 0.2em 0.4em;
+  margin-left: 7px;
+  font-size: 85%;
+  background-color: var(--tag-color);
+  border-radius: 6px;
+  color: var(--color-dark);
+}
+.text-light {
+  color: #7d7d7d;
+  font-size: 1.3rem;
+}
+.coder {
+  padding: 30px 15px;
+}
+.coder__highlight {
+  padding: 16px;
+  overflow: auto;
+  font-size: inherit;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+.education {
+  padding: 30px 15px;
+}
+.language {
+  padding: 30px 15px;
+}
+.footer {
+  padding: 25px 0;
+  border-top: 2px solid var(--tag-color);
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-dark);
+  opacity: 0.8;
+}
+.icon-git {
+  background: url(../images/svg/github_icon.svg) no-repeat center/contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  transition: all 0.2s ease;
+}
+.icon-rsschool {
+  background: url(../images/svg/rs_school_js.svg) no-repeat center/contain;
+  margin-right: 7px;
+  width: 60px;
+  height: 30px;
+  transition: all 0.2s ease;
+}
+
 @media only screen and (max-width: 768px) {
   .layout-2-col {
     justify-content: center;
@@ -199,7 +279,7 @@ address {
 @media only screen and (max-width: 414px) {
   .content {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
   }
   .promo__title {
     white-space: normal;
