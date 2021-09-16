@@ -10,9 +10,11 @@ document.addEventListener("click", (e) => {
   let items = document.querySelectorAll(".navigation__item");
   for (let item of items) {
     if (e.target === item) {
-      document
-        .querySelector(".navigation.show-menu")
-        .classList.remove(showMenu);
+      setTimeout(() => {
+        document
+          .querySelector(".navigation.show-menu")
+          .classList.remove(showMenu);
+      }, 1000);
     }
   }
 });
