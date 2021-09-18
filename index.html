@@ -11,6 +11,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- highlights code-->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <!-- highlights -->
   </head>
   <body class="content">
     <header class="header">
@@ -51,7 +61,7 @@
     <main>
       <section id="hello" class="hello">
         <div class="layout-2-col">
-          <div class="hello__info">
+          <article class="hello__info">
             <span class="hello__greet">Hello I'm</span>
             <h1 class="hello__title">Viktor Tishchenko</h1>
             <p class="hello__text">Aspiring web developer</p>
@@ -94,10 +104,13 @@
                 ></a>
               </li>
             </ul>
-          </div>
-          <div class="hello-img">
-            <img src="./images/avablue.png" alt="avatar" />
-          </div>
+          </article>
+          <aside class="hello-img">
+            <figure>
+              <img src="./images/avablue.png" alt="avatar" />
+              <figcaption>Author avatar</figcaption>
+            </figure>
+          </aside>
         </div>
       </section>
       <section id="about" class="about">
@@ -211,7 +224,6 @@ document.addEventListener("click", (e) => {
         ><span class="icon-rsschool"></span
       ></a>
     </footer>
-    <span class="to-top" id="to-top"></span>
     <script src="./js/script.js"></script>
   </body>
 </html>

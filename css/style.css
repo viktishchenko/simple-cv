@@ -143,6 +143,10 @@ section {
   padding: 30px 15px;
 }
 
+figcaption {
+  visibility: hidden;
+}
+
 .layout-2-col {
   display: flex;
   flex-wrap: wrap;
@@ -297,15 +301,6 @@ address {
 .text-light {
   color: var(--text-light);
   font-size: 1.3rem;
-}
-
-.coder__highlight {
-  padding: 16px;
-  overflow: auto;
-  font-size: inherit;
-  line-height: 1.45;
-  background-color: var(--highlight-color);
-  border-radius: 3px;
 }
 
 .footer {
