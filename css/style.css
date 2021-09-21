@@ -305,12 +305,12 @@ address {
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: space-between;
 }
 
 .card {
   position: relative;
+  margin-bottom: 30px;
   padding: 10px;
   flex-basis: 30%;
   color: var(--text-color);
@@ -611,6 +611,14 @@ video {
     justify-content: center;
   }
 
+  .card {
+    flex-basis: 45%;
+  }
+
+  .card__tags {
+    display: flex;
+  }
+
   .player__container {
     height: auto;
   }
@@ -696,6 +704,9 @@ video {
   }
   address {
     white-space: nowrap;
+  }
+  .card {
+    flex-basis: auto;
   }
   .player__button {
     width: 80px;
