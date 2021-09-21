@@ -189,7 +189,107 @@ document.addEventListener("click", (e) => {
       </section>
       <section id="portfolio" class="portfolio">
         <h2 class="section-title">Portfolio</h2>
-        <p class="section-text">portfolio section description</p>
+        <div class="layout-3-column portfolio__container">
+          <a
+            class="card"
+            href="https://viktishchenko.github.io/tasks/momentum/"
+            target="_blank"
+            title="Royal-Palace virtual tour"
+          >
+            <img
+              class="card__img"
+              src="./images/works/momentum/momentum-sm.jpg"
+              alt="Royal Palace"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Momentum</h3>
+              <p class="card__desc">
+                Momentum is an analogue of the Chrome Web Store app. Shows time,
+                weather and username. Background image and the greeting changes
+                depending on the time of day.
+              </p>
+            </div>
+            <div class="card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+          </a>
+          <a
+            class="card"
+            href="https://viktishchenko.github.io/tasks/clean-code/"
+            target="_blank"
+            title="Royal-Palace virtual tour"
+          >
+            <img
+              class="card__img"
+              src="./images/works/cleancode/clean-code-sm.jpg"
+              alt="Royal Palace"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Clean Code</h3>
+              <p class="card__desc">
+                Small single page web application TODO-list. Task - refactoring
+                the existing code according to the task, after which the
+                application will still work.
+              </p>
+            </div>
+            <div class="card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+          </a>
+          <a
+            class="card"
+            href="https://viktishchenko.github.io/tasks/calculator/"
+            target="_blank"
+            title="Royal-Palace virtual tour"
+          >
+            <img
+              class="card__img"
+              src="./images/works/calculator/calculator.jpg"
+              alt="Royal Palace"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Calculator</h3>
+              <p class="card__desc">
+                The calculator is a great project for the first acquaintance
+                with JavaScript. Simple enough to implement and affordable
+                developers of all skill levels.
+              </p>
+            </div>
+            <div class="card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+          </a>
+          <a
+            class="card"
+            href="https://viktishchenko.github.io/tasks/photo-filter/"
+            target="_blank"
+            title="Royal-Palace virtual tour"
+          >
+            <img
+              class="card__img"
+              src="./images/works/photofilter/photo-filter-sm.jpg"
+              alt="Royal Palace"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Photo Filter</h3>
+              <p class="card__desc">
+                Photofilter is a photo editor that allows you to edit image by
+                applying various properties and filters to them.
+              </p>
+            </div>
+            <div class="card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+          </a>
+        </div>
       </section>
       <section id="education" class="education">
         <h2 class="section-title">Education</h2>
@@ -198,6 +298,19 @@ document.addEventListener("click", (e) => {
           Omsk State Technical University, Russian Federation
           <span class="text-light"> (September 2000 - July 2005) </span>
         </p>
+        <h3 class="education__subtitle">Self education</h3>
+        <ul class="tags-list tags">
+          <li class="tag-list__item">
+            HTML and CSS Tutorials <span class="text-light"> (w3schools) </span>
+          </li>
+          <li class="tag-list__item">
+            The Modern JavaScript Tutorial
+            <span class="text-light"> (learn.javascript.ru)</span>
+          </li>
+          <li class="tag-list__item">
+            RS Schools «JavaScript/Front-end. Stage 0»
+          </li>
+        </ul>
       </section>
       <section id="language" class="language">
         <h2 class="section-title">Language competencies</h2>
@@ -209,7 +322,49 @@ document.addEventListener("click", (e) => {
       </section>
       <section id="video" class="video">
         <h2 class="section-title">Video</h2>
-        <p>video section description</p>
+        <div class="player">
+          <div class="player__container">
+            <div class="player__video">
+              <video
+                src="./video/Nyan_Cat.mp4"
+                poster="./images/player/Video_journey.jpg"
+              ></video>
+              <button class="player__button"></button>
+            </div>
+            <div class="player__controls">
+              <button
+                class="player__controls-btn player__controls-play"
+              ></button>
+              <input
+                class="player__controls-progress progress"
+                id="progress"
+                type="range"
+                value="54"
+                min="0"
+                max="100"
+                step="1"
+              />
+              <button
+                class="player__controls-volume player__controls-volume_yep"
+              ></button>
+              <input
+                class="player__controls-volume-input progress"
+                id="volume"
+                type="range"
+                value="50"
+                min="0"
+                max="100"
+                step="1"
+              />
+              <button
+                class="
+                  player__controls-fullscreen player__controls-fullscreen_yep
+                "
+                title="Press Enter switch full-screen"
+              ></button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
