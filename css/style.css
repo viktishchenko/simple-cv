@@ -108,17 +108,17 @@ a {
   left: 0;
 }
 
-.hamburger:hover {
+.show-btn {
   transform: rotate(90deg);
 }
 
-.hamburger:hover .hamburger__line {
+.show-btn::after {
   background: var(--primary-color);
 }
-
-.hamburger:hover .hamburger__line:hover,
-.hamburger:hover::after,
-.hamburger:hover::before {
+.show-btn > span {
+  background: var(--primary-color);
+}
+.show-btn::before {
   background: var(--primary-color);
 }
 

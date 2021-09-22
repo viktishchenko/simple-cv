@@ -14,6 +14,7 @@ const videoContainer = document.querySelector(".player__container");
 // Menu
 hamburger.addEventListener("click", function () {
   navigation.classList.toggle("show-menu");
+  hamburger.classList.toggle("show-btn");
 });
 
 navigation.addEventListener("click", (e) => {
@@ -21,6 +22,7 @@ navigation.addEventListener("click", (e) => {
     setTimeout(() => {
       navigation.classList.remove("show-menu");
     }, 1000);
+    hamburger.classList.remove("show-btn");
   }
 });
 
