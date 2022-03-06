@@ -1,20 +1,19 @@
 ## **Viktor Tishchenko**
 
-+7 904 325 84 51 · Telegram · Omsk, Russian Federation · web22pro@gmail.com
++7 904 325 84 51 · Telegram · WhatsApp · Omsk, Russian Federation · web22pro@yandex.ru
 
 ### Summary
 
-Hello, I’m a Viktor, aspiring web developer based in Omsk. I have some experience in designing, building and customizing websites. Currently studying «JavaScript/Front-end» at RS School.
+Hello, I’m a Viktor, aspiring web developer based in Omsk. I have some experience in designing, building and customizing websites.
 
 ### Skills
 
-- Languages: HTML, CSS, Javascript (basics);
-- Web libs: Bootstrap, jQuery, Materialize;
+- Languages: HTML, CSS, Javascript, React, Node(s-s);
+- Web libs: Bootstrap, Materialize, Styled Components;
 - Responsive design;
-- Web Dev tools: Gulp, npm;
+- Web Dev tools: webpack, gulp, npm;
 - VCS: Git, Github;
-- DB: MongoDB Atlas (basic set of queries);
-- Graphic editors: Photoshop, Figma, GWD;
+- Graphic editors: Photoshop, Figma;
 - Search engine optimization
 
 ### Code Example
@@ -52,4 +51,4 @@ document.addEventListener("click", (e) => {
 ### Language competencies
 
 - Russian: native language
-- English: something in-between an A2 and a B1.
+- English: something in-between an B1 and a B2.
