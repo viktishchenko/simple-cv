@@ -1,3 +1,3 @@
-# rsschool-cv
+# simple-cv
 
-[HTML, CSS & Git Basics](https://viktishchenko.github.io/rsschool-cv/)
+[HTML, CSS & Git Basics](https://viktishchenko.github.io/simple-cv/)
