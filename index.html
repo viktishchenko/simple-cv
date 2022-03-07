@@ -344,9 +344,48 @@ document.addEventListener("click", (e) => {
           Video
           <span class="text-light"> (self-introduction)</span>
         </h2>
-        <div class="player">
-          <div class="player__container">
-            <div class="player__video">
+        <div class="video-container">
+          <div class="video-container__wrapper">
+            <!-- test -->
+            <video
+              src="./media/Nyan_Cat.mp4"
+              poster="./media/poster.jpg"
+              class="player video-player"
+            ></video>
+            <button class="player player__button"></button>
+            <div class="player__controls">
+              <button
+                class="player player__controls-btn player__controls-play"
+              ></button>
+              <input
+                class="player__controls-progress progress-bar progress-video"
+                id="progress"
+                type="range"
+                value="0"
+                min="0"
+                max="100"
+                step="1"
+              />
+              <button
+                class="player__controls-volume player__controls-volume_yep"
+              ></button>
+              <input
+                class="player__controls-volume-input progress-bar progress-sound"
+                id="volume"
+                type="range"
+                value="20"
+                min="0"
+                max="100"
+                step="1"
+              />
+              <button
+                class="player__controls-fullscreen player__controls-fullscreen_yep"
+                title="Press Enter switch full-screen"
+              ></button>
+            </div>
+            <!-- end test -->
+
+            <!-- <div class="player__video">
               <video
                 src="./video/Nyan_Cat.mp4"
                 poster="./images/player/Video_journey.jpg"
@@ -382,7 +421,7 @@ document.addEventListener("click", (e) => {
                 class="player__controls-fullscreen player__controls-fullscreen_yep"
                 title="Press Enter switch full-screen"
               ></button>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
