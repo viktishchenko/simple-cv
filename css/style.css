@@ -1,10 +1,13 @@
 :root {
   --font-size: 10px;
-  --primary-color: #2196f3;
-  --primary-light: #4daaf55c;
+  --primary-color: #c89961;
+  /* --primary-color: #2196f3; */
+  --primary-light: #c899612b;
+  /* --primary-light: #4daaf55c; */
   --text-color: #212529;
   --text-light: #7d7d7d;
-  --tag-color: #eff1f3;
+  --tag-color: #c899612b;
+  /* --tag-color: #eff1f3; */
   --nav-color: #9f9f9f;
   --highlight-color: #f6f8fa;
   --color-dark: #000;
@@ -234,9 +237,13 @@ figcaption {
 }
 .contact-list__item:hover span,
 .contact-list__link:hover span {
+  filter: invert(76%) sepia(19%) saturate(943%) hue-rotate(350deg)
+    brightness(82%) contrast(90%);
+}
+/* .contact-list__link:hover span {
   filter: invert(48%) sepia(73%) saturate(583%) hue-rotate(166deg)
     brightness(93%) contrast(105%);
-}
+} */
 .social-link:hover {
   border-radius: 4px;
   background-color: var(--color-dark);
