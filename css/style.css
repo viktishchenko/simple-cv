@@ -60,13 +60,18 @@ a {
 
 .header {
   position: relative;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   border-bottom: 2px solid var(--tag-color);
+}
+
+nav {
+  padding: 1rem;
 }
 
 .humburger-container {
   display: flex;
   justify-content: flex-end;
+  height: 0;
 }
 
 .hamburger {
@@ -123,6 +128,11 @@ a {
 }
 .show-btn::before {
   background: var(--primary-color);
+}
+
+.header__navigation {
+  overflow: hidden;
+  height: auto;
 }
 
 .navigation {
@@ -574,6 +584,18 @@ address {
 }
 
 @media only screen and (max-width: 768px) {
+  .humburger-container {
+    height: 50px;
+    /* display: flex;
+  justify-content: flex-end;
+  height: 0; */
+  }
+  .header__navigation {
+    height: 0;
+  }
+  .navigation {
+    height: 60px;
+  }
   .player__container {
     height: auto;
   }
@@ -884,9 +906,9 @@ video {
     justify-content: unset;
     align-items: unset;
     flex-direction: column;
-    height: 0;
+    height: auto;
     margin-top: 30px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: var(--transition);
   }
 

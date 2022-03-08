@@ -1,10 +1,12 @@
+// menu
 const hamburger = document.querySelector(".hamburger");
+const linksContainer = document.querySelector(".links-container");
 const navigation = document.querySelector(".navigation");
-const showMenu = "show-menu";
+const navigationItem = document.querySelectorAll(".navigation__item");
+// const showMenu = "show-menu";
 
-// PLAYER
+// player
 const player = document.querySelectorAll(".player");
-
 const video = document.querySelector("video");
 const mainPlayButton = document.querySelector(".player__button");
 const playerControls = document.querySelector(".player__controls");
@@ -14,6 +16,27 @@ const volume = document.getElementById("volume");
 const progress = document.getElementById("progress");
 const fullScreen = document.querySelector(".player__controls-fullscreen");
 const videoContainer = document.querySelector(".video-container__wrapper");
+
+// Menu
+hamburger.addEventListener("click", function () {
+  const linksHeight = navigation.getBoundingClientRect().height;
+  console.log("linksHeight :>> ", linksHeight);
+});
+
+// hamburger.addEventListener("click", function () {
+//   navigation.classList.toggle("show-menu");
+//   hamburger.classList.toggle("show-btn");
+// });
+
+// navigation.addEventListener("click", (e) => {
+//   if (navigation.classList.contains("show-menu")) {
+//     setTimeout(() => {
+//       navigation.classList.remove("show-menu");
+//     }, 1000);
+//     hamburger.classList.remove("show-btn");
+//   }
+// });
+
 // PLAYER
 // const video = document.querySelector("video");
 // const player = document.querySelector(".player");
@@ -26,21 +49,6 @@ const videoContainer = document.querySelector(".video-container__wrapper");
 // const videoContainer = document.querySelector(".player__container");
 const currentYear = (document.querySelector(".current-year").innerHTML =
   new Date().getFullYear());
-
-// Menu
-hamburger.addEventListener("click", function () {
-  navigation.classList.toggle("show-menu");
-  hamburger.classList.toggle("show-btn");
-});
-
-navigation.addEventListener("click", (e) => {
-  if (navigation.classList.contains("show-menu")) {
-    setTimeout(() => {
-      navigation.classList.remove("show-menu");
-    }, 1000);
-    hamburger.classList.remove("show-btn");
-  }
-});
 
 // Play-Pause
 // video.addEventListener("click", togglePlayPause);
