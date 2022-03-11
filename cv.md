@@ -5,7 +5,7 @@
 ### Summary
 
 Hello, I’m a Viktor, aspiring web developer based in Omsk. I am a proactive, confident and communicatively strong person always looking ahead in the future. Now, as in
-the last few months, I am actively studying HTML, CSS, JavaScript,
+the past few months, I am actively studying HTML, CSS, JavaScript,
 React, algorithms, design and development patterns, and in the near
 future - Node.js, Next.js.
 

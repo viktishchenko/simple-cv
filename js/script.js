@@ -1,10 +1,3 @@
-// menu
-const hamburger = document.querySelector(".hamburger");
-const linksContainer = document.querySelector(".links-container");
-const navigation = document.querySelector(".navigation");
-const navigationItem = document.querySelectorAll(".navigation__item");
-// const showMenu = "show-menu";
-
 // player
 const player = document.querySelectorAll(".player");
 const video = document.querySelector("video");
@@ -18,129 +11,48 @@ const fullScreen = document.querySelector(".player__controls-fullscreen");
 const videoContainer = document.querySelector(".video-container__wrapper");
 
 // Menu
-hamburger.addEventListener("click", function () {
-  const linksHeight = navigation.getBoundingClientRect().height;
-  console.log("linksHeight :>> ", linksHeight);
-});
+const navbar = document.getElementById("nav");
+const hamburger = document.querySelector(".hamburger");
+const headerNavigation = document.querySelector(".header__navigation");
+const navigationList = document.querySelector(".navigation__list");
+const scrollLink = document.querySelectorAll(".scroll-link");
+// const showMenu = "show-menu";
 
-// hamburger.addEventListener("click", function () {
-//   navigation.classList.toggle("show-menu");
-//   hamburger.classList.toggle("show-btn");
-// });
+hamburger.addEventListener("click", showMobileMenu);
 
-// navigation.addEventListener("click", (e) => {
-//   if (navigation.classList.contains("show-menu")) {
-//     setTimeout(() => {
-//       navigation.classList.remove("show-menu");
-//     }, 1000);
-//     hamburger.classList.remove("show-btn");
-//   }
-// });
+function showMobileMenu() {
+  console.log("window.innerWidth", window.innerWidth);
 
-// PLAYER
-// const video = document.querySelector("video");
-// const player = document.querySelector(".player");
-// const playerBtn = document.querySelector(".player__button");
-// const playerControlsBtn = document.querySelector(".player__controls-btn");
-// const playerControlsVolume = document.querySelector(".player__controls-volume");
-// const volume = document.getElementById("volume");
-// const progress = document.getElementById("progress");
-// const fullScreen = document.querySelector(".player__controls-fullscreen");
-// const videoContainer = document.querySelector(".player__container");
+  if (window.innerWidth <= 768) {
+    const linksHeight = navigationList.getBoundingClientRect().height;
+    const containerHeight = headerNavigation.getBoundingClientRect().height;
+
+    if (containerHeight === 0) {
+      headerNavigation.style.height = `${linksHeight}px`;
+    } else {
+      headerNavigation.style.height = 0;
+    }
+    scrollLink.forEach((el) => {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        const ancor = el.getAttribute("href").slice(1);
+        const element = document.getElementById(ancor);
+        const navHeight = navbar.getBoundingClientRect().height;
+        let position = element.offsetTop - navHeight;
+        window.scrollTo(0, position + 70);
+        headerNavigation.style.height = 0;
+      });
+    });
+  }
+}
+
+/* 
+=============
+Current-Year
+=============
+*/
 const currentYear = (document.querySelector(".current-year").innerHTML =
   new Date().getFullYear());
-
-// Play-Pause
-// video.addEventListener("click", togglePlayPause);
-// playerBtn.onclick = togglePlayPause;
-// playerControlsBtn.onclick = togglePlayPause;
-
-// function togglePlayPause() {
-//   if (video.paused) {
-//     playerControlsBtn.classList.remove("player__controls-play");
-//     playerControlsBtn.classList.add("player__controls-pause");
-//     playerBtn.hidden = true;
-//     video.play();
-//   } else {
-//     playerControlsBtn.classList.remove("player__controls-pause");
-//     playerControlsBtn.classList.add("player__controls-play");
-//     playerBtn.hidden = false;
-//     video.pause();
-//   }
-//   if (video.ended) {
-//     playerBtn.hidden = false;
-//     playerControlsBtn.classList.add("player__controls-play");
-//   }
-// }
-
-// Mute
-// playerControlsVolume.onclick = toggleMutedVideo;
-
-// function toggleMutedVideo() {
-//   if (video.muted) {
-//     playerControlsVolume.classList.remove("player__controls-volume_nope");
-//     playerControlsVolume.classList.add("player__controls-volume_yep");
-//     video.muted = false;
-//   } else {
-//     playerControlsVolume.classList.remove("player__controls-volume_yep");
-//     playerControlsVolume.classList.add("player__controls-volume_nope");
-//     video.muted = true;
-//   }
-// }
-
-// Sound
-// progress.addEventListener("input", function () {
-//   const value = this.value;
-//   this.style.background = `linear-gradient(
-//     to right,
-//     #2196f3 0%,
-//     #2196f3 ${value}%,
-//     #fff ${value}%,
-//     #fff 100%
-//   )`;
-// });
-
-// Video
-// volume.addEventListener("input", function () {
-//   const value = this.value;
-//   this.style.background = `linear-gradient(
-//     to right,
-//     #2196f3 0%,
-//     #2196f3 ${value}%,
-//     #fff ${value}%,
-//     #fff 100%
-//   )`;
-//   if (volume.value < 10) {
-//     playerControlsVolume.classList.remove("player__controls-volume_yep");
-//     playerControlsVolume.classList.add("player__controls-volume_nope");
-//   } else {
-//     playerControlsVolume.classList.remove("player__controls-volume_nope");
-//     playerControlsVolume.classList.add("player__controls-volume_yep");
-//   }
-//   video.volume = volume.value / 100;
-// });
-
-// Fullscreen
-// fullScreen.onclick = toggleFullScreen;
-
-// document.addEventListener(
-//   "keypress",
-//   function (e) {
-//     if (e.keyCode === 13) {
-//       toggleFullScreen();
-//     }
-//   },
-//   false
-// );
-
-// function toggleFullScreen() {
-//   if (!document.fullscreenElement) {
-//     videoContainer.requestFullscreen();
-//   }
-//   if (document.fullscreenElement) {
-//     document.exitFullscreen();
-//   }
-// }
 
 /* 
 =============
@@ -180,7 +92,6 @@ function videoProgressUpdate() {
 }
 
 function stopVideo() {
-  console.log("video ended!");
   mainPlayButton.hidden = false;
   playerControlsBtn.classList.remove("player__controls-pause");
   playerControlsBtn.classList.add("player__controls-play");
@@ -194,7 +105,6 @@ Mute
 
 function changeVulumeRange(vol) {
   const value = vol;
-  console.log("value :>> ", value);
   video.volume = vol / 100;
   volume.value = value;
   volume.style.background = `linear-gradient(
@@ -289,4 +199,3 @@ window.addEventListener("keydown", function (e) {
     e.preventDefault();
   }
 });
-window.do;

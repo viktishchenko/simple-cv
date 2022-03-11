@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="home" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,30 +31,30 @@
           ></span>
         </div>
         <div class="header__navigation">
-          <ul class="navigation">
+          <ul class="navigation__list">
             <li class="navigation__link">
-              <a class="navigation__item" href="#hello">Hello</a>
+              <a class="scroll-link" href="#hello">Hello</a>
             </li>
             <li class="navigation__link">
-              <a class="navigation__item" href="#about">About</a>
+              <a class="scroll-link" href="#about">About</a>
             </li>
             <li class="navigation__link">
-              <a class="navigation__item" href="#skills">Skills</a>
+              <a class="scroll-link" href="#skills">Skills</a>
             </li>
             <li class="navigation__link">
-              <a class="navigation__item" href="#coder">Code</a>
+              <a class="scroll-link" href="#coder">Code</a>
             </li>
             <li class="navigation__link">
-              <a class="navigation__item" href="#portfolio">Portfolio</a>
+              <a class="scroll-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="navigation__link">
-              <a class="navigation__item" href="#education">Education</a>
+              <a class="scroll-link" href="#education">Education</a>
             </li>
             <li class="navigation__link">
-              <a class="navigation__item" href="#language">Language</a>
+              <a class="scroll-link" href="#language">Language</a>
             </li>
             <li class="navigation__link">
-              <a class="navigation__item" href="#video">Video</a>
+              <a class="scroll-link" href="#video">Video</a>
             </li>
           </ul>
         </div>
@@ -124,7 +124,7 @@
         <p class="section-text">
           Hello, I’m a Viktor, aspiring web developer based in Omsk. I am a
           proactive, confident and communicatively strong person always looking
-          ahead in the future. Now, as in the last few months, I am actively
+          ahead in the future. Now, as in the past few months, I am actively
           studying HTML, CSS, JavaScript, React, algorithms, design and
           development patterns, and in the near future - Node.js, Next.js.
         </p>
@@ -221,28 +221,27 @@ document.addEventListener("click", (e) => {
           </a>
           <a
             class="card"
-            href="https://viktishchenko.github.io/tasks/clean-code/"
+            href="https://viktishchenko.github.io/tasks/photo-filter/"
             target="_blank"
-            title="Clean Code"
+            title="Photo Filter"
           >
             <article>
               <img
                 class="card__img"
-                src="./images/works/cleancode/clean-code-sm.jpg"
-                alt="Clean Code"
+                src="./images/works/photofilter/photo-filter-sm.jpg"
+                alt="Photo Filter"
               />
               <div class="card__content">
-                <h3 class="card__title">Clean Code</h3>
+                <h3 class="card__title">Photo Filter</h3>
                 <p class="card__desc">
-                  Small single page web application TODO-list. Task -
-                  refactoring the existing code according to the task, after
-                  which the application will still work.
+                  Photofilter is a photo editor that allows you to edit image by
+                  applying various properties and filters to them.
                 </p>
               </div>
               <div class="card__tags">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
-                <span class="tag">Javascript</span>
+                <span class="tag">JavaScript</span>
               </div>
             </article>
           </a>
@@ -264,32 +263,6 @@ document.addEventListener("click", (e) => {
                   The calculator is a great project for the first acquaintance
                   with JavaScript. Simple enough to implement and affordable
                   developers of all skill levels.
-                </p>
-              </div>
-              <div class="card__tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Javascript</span>
-              </div>
-            </article>
-          </a>
-          <a
-            class="card"
-            href="https://viktishchenko.github.io/tasks/photo-filter/"
-            target="_blank"
-            title="Photo Filter"
-          >
-            <article>
-              <img
-                class="card__img"
-                src="./images/works/photofilter/photo-filter-sm.jpg"
-                alt="Photo Filter"
-              />
-              <div class="card__content">
-                <h3 class="card__title">Photo Filter</h3>
-                <p class="card__desc">
-                  Photofilter is a photo editor that allows you to edit image by
-                  applying various properties and filters to them.
                 </p>
               </div>
               <div class="card__tags">
@@ -348,7 +321,6 @@ document.addEventListener("click", (e) => {
         </h2>
         <div class="video-container">
           <div class="video-container__wrapper">
-            <!-- test -->
             <video
               src="./media/Nyan_Cat.mp4"
               poster="./media/poster.jpg"
@@ -385,45 +357,6 @@ document.addEventListener("click", (e) => {
                 title="Press Enter switch full-screen"
               ></button>
             </div>
-            <!-- end test -->
-
-            <!-- <div class="player__video">
-              <video
-                src="./video/Nyan_Cat.mp4"
-                poster="./images/player/Video_journey.jpg"
-              ></video>
-              <button class="player__button"></button>
-            </div>
-            <div class="player__controls">
-              <button
-                class="player__controls-btn player__controls-play"
-              ></button>
-              <input
-                class="player__controls-progress progress"
-                id="progress"
-                type="range"
-                value="54"
-                min="0"
-                max="100"
-                step="1"
-              />
-              <button
-                class="player__controls-volume player__controls-volume_yep"
-              ></button>
-              <input
-                class="player__controls-volume-input progress"
-                id="volume"
-                type="range"
-                value="50"
-                min="0"
-                max="100"
-                step="1"
-              />
-              <button
-                class="player__controls-fullscreen player__controls-fullscreen_yep"
-                title="Press Enter switch full-screen"
-              ></button>
-            </div> -->
           </div>
         </div>
       </section>
@@ -435,12 +368,12 @@ document.addEventListener("click", (e) => {
         class="contact-list__link"
         ><span class="icon-git"></span>Visit my github</a
       >
-      <p class="footer-text">
-        ©
+      <a class="contact-list__link top-link" href="#home">to top ↑</a>
+      <p class="footer-text text-center">
+        ©&nbsp;
         <span class="current-year"></span>
       </p>
     </footer>
-    <a class="scroll-link top-link show-link" href="#home"> </a>
     <script src="./js/script.js"></script>
   </body>
 </html>
