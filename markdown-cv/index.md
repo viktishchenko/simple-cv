@@ -4,11 +4,14 @@
 
 ### Summary
 
-Hello, I’m a Viktor, aspiring web developer based in Omsk. I have some experience in designing, building and customizing websites.
+Hello, I’m a Viktor, aspiring web developer based in Omsk. I am a proactive, confident and communicatively strong person always looking ahead in the future. Now, as in
+the past few months, I am actively studying HTML, CSS, JavaScript,
+React, algorithms, design and development patterns, and in the near
+future - Node.js, Next.js.
 
 ### Skills
 
-- Languages: HTML, CSS, Javascript, React, Node(s-s);
+- Languages: HTML, CSS, Javascript, React;
 - Web libs: Bootstrap, Materialize, Styled Components;
 - Responsive design;
 - Web Dev tools: webpack, gulp, npm;
@@ -51,4 +54,4 @@ document.addEventListener("click", (e) => {
 ### Language competencies
 
 - Russian: native language
-- English: something in-between an B1 and a B2.
+- English: B2(EFSET).

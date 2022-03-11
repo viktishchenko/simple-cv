@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="home" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,38 +24,40 @@
   </head>
   <body class="content">
     <header class="header">
-      <div class="humburger-container">
-        <span class="header__hamburger hamburger"
-          ><span class="hamburger__line"></span
-        ></span>
-      </div>
-      <nav class="header__navigation">
-        <ul class="navigation">
-          <li class="navigation__link">
-            <a class="navigation__item" href="#hello">Hello</a>
-          </li>
-          <li class="navigation__link">
-            <a class="navigation__item" href="#about">About</a>
-          </li>
-          <li class="navigation__link">
-            <a class="navigation__item" href="#skills">Skills</a>
-          </li>
-          <li class="navigation__link">
-            <a class="navigation__item" href="#coder">Code</a>
-          </li>
-          <li class="navigation__link">
-            <a class="navigation__item" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="navigation__link">
-            <a class="navigation__item" href="#education">Education</a>
-          </li>
-          <li class="navigation__link">
-            <a class="navigation__item" href="#language">Language</a>
-          </li>
-          <li class="navigation__link">
-            <a class="navigation__item" href="#video">Video</a>
-          </li>
-        </ul>
+      <nav id="nav">
+        <div class="humburger-container">
+          <span class="header__hamburger hamburger"
+            ><span class="hamburger__line"></span
+          ></span>
+        </div>
+        <div class="header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__link">
+              <a class="scroll-link" href="#hello">Hello</a>
+            </li>
+            <li class="navigation__link">
+              <a class="scroll-link" href="#about">About</a>
+            </li>
+            <li class="navigation__link">
+              <a class="scroll-link" href="#skills">Skills</a>
+            </li>
+            <li class="navigation__link">
+              <a class="scroll-link" href="#coder">Code</a>
+            </li>
+            <li class="navigation__link">
+              <a class="scroll-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="navigation__link">
+              <a class="scroll-link" href="#education">Education</a>
+            </li>
+            <li class="navigation__link">
+              <a class="scroll-link" href="#language">Language</a>
+            </li>
+            <li class="navigation__link">
+              <a class="scroll-link" href="#video">Video</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -67,8 +69,8 @@
             <p class="hello__text">Aspiring web developer</p>
             <ul class="contact-list">
               <li>
-                <a class="contact-list__link" href="mailto:web22pro@gmail.com"
-                  ><span class="icon icon-mail"></span> web22pro@gmail.com</a
+                <a class="contact-list__link" href="mailto: web22pro@yandex.ru"
+                  ><span class="icon icon-mail"></span> web22pro@yandex.ru</a
                 >
               </li>
               <li>
@@ -84,22 +86,25 @@
             <ul class="contact-list social">
               <li>
                 <a
+                  target="_blank"
                   class="contact-list__link social-link"
-                  href="http://facebook.com"
+                  href="https://www.google.com/search?q=facebook.com"
                   ><span class="icon icon-social icon-facebook"></span
                 ></a>
               </li>
               <li>
                 <a
+                  target="_blank"
                   class="contact-list__link social-link"
-                  href="http://twitter.com"
+                  href="https://www.google.com/search?q=twitter.com"
                   ><span class="icon icon-social icon-twitter"></span
                 ></a>
               </li>
               <li>
                 <a
+                  target="_blank"
                   class="contact-list__link social-link"
-                  href="http://twitter.com"
+                  href="https://github.com/viktishchenko"
                   ><span class="icon icon-social icon-github"></span
                 ></a>
               </li>
@@ -107,7 +112,8 @@
           </div>
           <aside class="hello-img">
             <figure>
-              <img src="./images/avablue.png" alt="avatar" />
+              <img src="./images/TishchenkoVV416х416R.jpg" alt="avatar" />
+              <!-- <img src="./images/avablue.png" alt="avatar" /> -->
               <figcaption>Author avatar</figcaption>
             </figure>
           </aside>
@@ -116,11 +122,11 @@
       <section id="about" class="about">
         <h2 class="section-title">About me</h2>
         <p class="section-text">
-          Hello, I’m a Viktor, aspiring web developer based in Omsk. I have some
-          experience in designing, building and customizing websites, but, I
-          regret to admit - nothing serious. And now I am determined to remedy
-          this situation. That's why now I am studying in «JavaScript/Front-end»
-          at RS School.
+          Hello, I’m a Viktor, aspiring web developer based in Omsk. I am a
+          proactive, confident and communicatively strong person always looking
+          ahead in the future. Now, as in the past few months, I am actively
+          studying HTML, CSS, JavaScript, React, algorithms, design and
+          development patterns, and in the near future - Node.js, Next.js.
         </p>
       </section>
       <section id="skills" class="skills">
@@ -129,17 +135,18 @@
           <li class="tag-list__item">
             Language: <span class="tag">HTML</span>
             <span class="tag">CSS</span>
-            <span class="tag">Javascript</span
-            ><span class="text-light"> (basic); </span>
+            <span class="tag">Javascript</span>
+            <span class="tag">React</span>
           </li>
           <li class="tag-list__item">
             Web libs: <span class="tag">Bootstrap</span>
-            <span class="tag">jQuery</span>
             <span class="tag">Materialize</span>
+            <span class="tag">Styled Components</span>
           </li>
           <li class="tag-list__item">Responsive design;</li>
           <li class="tag-list__item">
-            Web Dev tools: <span class="tag">Gulp</span>
+            Web Dev tools: <span class="tag">webpack</span>
+            <span class="tag">gulp</span>
             <span class="tag">npm</span>
           </li>
           <li class="tag-list__item">
@@ -147,13 +154,8 @@
             <span class="tag">Github</span>
           </li>
           <li class="tag-list__item">
-            DB: <span class="tag">MongoDB Atlas</span
-            ><span class="text-light"> (basic set of queries); </span>
-          </li>
-          <li class="tag-list__item">
             Graphic editors: <span class="tag">Photoshop</span>
             <span class="tag">Figma</span>
-            <span class="tag">GWD</span>
           </li>
           <li class="tag-list__item">Search engine optimization</li>
         </ul>
@@ -219,28 +221,27 @@ document.addEventListener("click", (e) => {
           </a>
           <a
             class="card"
-            href="https://viktishchenko.github.io/tasks/clean-code/"
+            href="https://viktishchenko.github.io/tasks/photo-filter/"
             target="_blank"
-            title="Clean Code"
+            title="Photo Filter"
           >
             <article>
               <img
                 class="card__img"
-                src="./images/works/cleancode/clean-code-sm.jpg"
-                alt="Clean Code"
+                src="./images/works/photofilter/photo-filter-sm.jpg"
+                alt="Photo Filter"
               />
               <div class="card__content">
-                <h3 class="card__title">Clean Code</h3>
+                <h3 class="card__title">Photo Filter</h3>
                 <p class="card__desc">
-                  Small single page web application TODO-list. Task -
-                  refactoring the existing code according to the task, after
-                  which the application will still work.
+                  Photofilter is a photo editor that allows you to edit image by
+                  applying various properties and filters to them.
                 </p>
               </div>
               <div class="card__tags">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
-                <span class="tag">Javascript</span>
+                <span class="tag">JavaScript</span>
               </div>
             </article>
           </a>
@@ -271,32 +272,6 @@ document.addEventListener("click", (e) => {
               </div>
             </article>
           </a>
-          <a
-            class="card"
-            href="https://viktishchenko.github.io/tasks/photo-filter/"
-            target="_blank"
-            title="Photo Filter"
-          >
-            <article>
-              <img
-                class="card__img"
-                src="./images/works/photofilter/photo-filter-sm.jpg"
-                alt="Photo Filter"
-              />
-              <div class="card__content">
-                <h3 class="card__title">Photo Filter</h3>
-                <p class="card__desc">
-                  Photofilter is a photo editor that allows you to edit image by
-                  applying various properties and filters to them.
-                </p>
-              </div>
-              <div class="card__tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Javascript</span>
-              </div>
-            </article>
-          </a>
         </div>
       </section>
       <section id="education" class="education">
@@ -309,14 +284,24 @@ document.addEventListener("click", (e) => {
         <h3 class="education__subtitle">Self education</h3>
         <ul class="tags-list tags">
           <li class="tag-list__item">
-            HTML and CSS Tutorials <span class="text-light"> (w3schools) </span>
+            «HTML and CSS Tutorials»
+            <span class="text-light"> (w3schools) </span>
           </li>
           <li class="tag-list__item">
-            The Modern JavaScript Tutorial
+            «JavaScript Tutorial»
             <span class="text-light"> (learn.javascript.ru)</span>
           </li>
           <li class="tag-list__item">
-            RS Schools «JavaScript/Front-end. Stage 0»
+            «JavaScript/React/Node»
+            <span class="text-light"> (Udemy/YouTube/freeCodeCamp)</span>
+          </li>
+          <li class="tag-list__item">
+            «Duolingo»
+            <span class="text-light"> (duolingo.com)</span>
+          </li>
+          <li class="tag-list__item">
+            «Anki»
+            <span class="text-light"> (apps.ankiweb.net)</span>
           </li>
         </ul>
       </section>
@@ -325,29 +310,32 @@ document.addEventListener("click", (e) => {
         <p>Russian: <span class="section-text">native language</span></p>
         <p>
           English:
-          <span class="section-text">something in-between an A2 and a B1</span>
+          <span class="section-text">B1</span>
+          <span class="text-light"> (EFSET)</span>
         </p>
       </section>
       <section id="video" class="video">
-        <h2 class="section-title">Video</h2>
-        <div class="player">
-          <div class="player__container">
-            <div class="player__video">
-              <video
-                src="./video/Nyan_Cat.mp4"
-                poster="./images/player/Video_journey.jpg"
-              ></video>
-              <button class="player__button"></button>
-            </div>
+        <h2 class="section-title">
+          Video
+          <span class="text-light"> (self-introduction)</span>
+        </h2>
+        <div class="video-container">
+          <div class="video-container__wrapper">
+            <video
+              src="./media/Nyan_Cat.mp4"
+              poster="./media/poster.jpg"
+              class="player video-player"
+            ></video>
+            <button class="player player__button"></button>
             <div class="player__controls">
               <button
-                class="player__controls-btn player__controls-play"
+                class="player player__controls-btn player__controls-play"
               ></button>
               <input
-                class="player__controls-progress progress"
+                class="player__controls-progress progress-bar progress-video"
                 id="progress"
                 type="range"
-                value="54"
+                value="0"
                 min="0"
                 max="100"
                 step="1"
@@ -356,18 +344,16 @@ document.addEventListener("click", (e) => {
                 class="player__controls-volume player__controls-volume_yep"
               ></button>
               <input
-                class="player__controls-volume-input progress"
+                class="player__controls-volume-input progress-bar progress-sound"
                 id="volume"
                 type="range"
-                value="50"
+                value="20"
                 min="0"
                 max="100"
                 step="1"
               />
               <button
-                class="
-                  player__controls-fullscreen player__controls-fullscreen_yep
-                "
+                class="player__controls-fullscreen player__controls-fullscreen_yep"
                 title="Press Enter switch full-screen"
               ></button>
             </div>
@@ -382,10 +368,11 @@ document.addEventListener("click", (e) => {
         class="contact-list__link"
         ><span class="icon-git"></span>Visit my github</a
       >
-      <p class="footer-text">© 2021</p>
-      <a href="https://rs.school/js/" class="contact-list__link"
-        ><span class="icon-rsschool"></span
-      ></a>
+      <a class="contact-list__link top-link" href="#home">to top ↑</a>
+      <p class="footer-text text-center">
+        ©&nbsp;
+        <span class="current-year"></span>
+      </p>
     </footer>
     <script src="./js/script.js"></script>
   </body>

@@ -1,104 +1,146 @@
-const hamburger = document.querySelector(".hamburger");
-const navigation = document.querySelector(".navigation");
-const showMenu = "show-menu";
+// player
+const player = document.querySelectorAll(".player");
 const video = document.querySelector("video");
-const player = document.querySelector(".player");
-const playerBtn = document.querySelector(".player__button");
+const mainPlayButton = document.querySelector(".player__button");
+const playerControls = document.querySelector(".player__controls");
 const playerControlsBtn = document.querySelector(".player__controls-btn");
 const playerControlsVolume = document.querySelector(".player__controls-volume");
 const volume = document.getElementById("volume");
 const progress = document.getElementById("progress");
 const fullScreen = document.querySelector(".player__controls-fullscreen");
-const videoContainer = document.querySelector(".player__container");
+const videoContainer = document.querySelector(".video-container__wrapper");
 
 // Menu
-hamburger.addEventListener("click", function () {
-  navigation.classList.toggle("show-menu");
-  hamburger.classList.toggle("show-btn");
-});
+const navbar = document.getElementById("nav");
+const hamburger = document.querySelector(".hamburger");
+const headerNavigation = document.querySelector(".header__navigation");
+const navigationList = document.querySelector(".navigation__list");
+const scrollLink = document.querySelectorAll(".scroll-link");
+// const showMenu = "show-menu";
 
-navigation.addEventListener("click", (e) => {
-  if (navigation.classList.contains("show-menu")) {
-    setTimeout(() => {
-      navigation.classList.remove("show-menu");
-    }, 1000);
-    hamburger.classList.remove("show-btn");
+hamburger.addEventListener("click", showMobileMenu);
+
+function showMobileMenu() {
+  console.log("window.innerWidth", window.innerWidth);
+
+  if (window.innerWidth <= 768) {
+    const linksHeight = navigationList.getBoundingClientRect().height;
+    const containerHeight = headerNavigation.getBoundingClientRect().height;
+
+    if (containerHeight === 0) {
+      headerNavigation.style.height = `${linksHeight}px`;
+    } else {
+      headerNavigation.style.height = 0;
+    }
+    scrollLink.forEach((el) => {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        const ancor = el.getAttribute("href").slice(1);
+        const element = document.getElementById(ancor);
+        const navHeight = navbar.getBoundingClientRect().height;
+        let position = element.offsetTop - navHeight;
+        window.scrollTo(0, position + 70);
+        headerNavigation.style.height = 0;
+      });
+    });
   }
-});
+}
 
-// Play-Pause
-video.addEventListener("click", togglePlayPause);
-playerBtn.onclick = togglePlayPause;
-playerControlsBtn.onclick = togglePlayPause;
+/* 
+=============
+Current-Year
+=============
+*/
+const currentYear = (document.querySelector(".current-year").innerHTML =
+  new Date().getFullYear());
 
+/* 
+=============
+Play-Pause
+=============
+*/
 function togglePlayPause() {
   if (video.paused) {
+    mainPlayButton.hidden = true;
     playerControlsBtn.classList.remove("player__controls-play");
     playerControlsBtn.classList.add("player__controls-pause");
-    playerBtn.hidden = true;
+    video.volume = 0.2;
     video.play();
   } else {
+    mainPlayButton.hidden = false;
     playerControlsBtn.classList.remove("player__controls-pause");
     playerControlsBtn.classList.add("player__controls-play");
-    playerBtn.hidden = false;
     video.pause();
   }
-  if (video.ended) {
-    playerBtn.hidden = false;
-    playerControlsBtn.classList.add("player__controls-play");
-  }
 }
 
-// Mute
-playerControlsVolume.onclick = toggleMutedVideo;
-
-function toggleMutedVideo() {
-  if (video.muted) {
-    playerControlsVolume.classList.remove("player__controls-volume_nope");
-    playerControlsVolume.classList.add("player__controls-volume_yep");
-    video.muted = false;
-  } else {
-    playerControlsVolume.classList.remove("player__controls-volume_yep");
-    playerControlsVolume.classList.add("player__controls-volume_nope");
-    video.muted = true;
+function videoProgressUpdate() {
+  if (this.value) {
+    video.currentTime = (video.duration * this.value) / 100;
   }
-}
 
-// Sound
-progress.addEventListener("input", function () {
-  const value = this.value;
-  this.style.background = `linear-gradient(
+  const value = Math.floor((video.currentTime / video.duration) * 100);
+  progress.value = value;
+
+  progress.style.background = `linear-gradient(
     to right,
-    #2196f3 0%,
-    #2196f3 ${value}%,
+    #c89961 0%,
+    #c89961 ${value}%,
+    #fff ${value}%,
+    #fff 100%
+    )`;
+}
+
+function stopVideo() {
+  mainPlayButton.hidden = false;
+  playerControlsBtn.classList.remove("player__controls-pause");
+  playerControlsBtn.classList.add("player__controls-play");
+}
+
+/* 
+=============
+Mute
+=============
+*/
+
+function changeVulumeRange(vol) {
+  const value = vol;
+  video.volume = vol / 100;
+  volume.value = value;
+  volume.style.background = `linear-gradient(
+    to right,
+    #c89961 0%,
+    #c89961 ${value}%,
     #fff ${value}%,
     #fff 100%
   )`;
-});
-
-// Video
-volume.addEventListener("input", function () {
-  const value = this.value;
-  this.style.background = `linear-gradient(
-    to right,
-    #2196f3 0%,
-    #2196f3 ${value}%,
-    #fff ${value}%,
-    #fff 100%
-  )`;
-  if (volume.value < 10) {
+  if (value == 0) {
     playerControlsVolume.classList.remove("player__controls-volume_yep");
     playerControlsVolume.classList.add("player__controls-volume_nope");
   } else {
     playerControlsVolume.classList.remove("player__controls-volume_nope");
     playerControlsVolume.classList.add("player__controls-volume_yep");
   }
-  video.volume = volume.value / 100;
-});
+}
 
-// Fullscreen
-fullScreen.onclick = toggleFullScreen;
+function toggleVolume() {
+  const btn = playerControlsVolume.classList;
+  if (btn.contains("player__controls-volume_yep")) {
+    playerControlsVolume.classList.remove("player__controls-volume_yep");
+    playerControlsVolume.classList.add("player__controls-volume_nope");
+    changeVulumeRange(0);
+  } else {
+    playerControlsVolume.classList.remove("player__controls-volume_nope");
+    playerControlsVolume.classList.add("player__controls-volume_yep");
+    changeVulumeRange(20);
+  }
+}
 
+/* 
+=============
+Fullscreen
+=============
+*/
 document.addEventListener(
   "keypress",
   function (e) {
@@ -112,45 +154,48 @@ document.addEventListener(
 function toggleFullScreen() {
   if (!document.fullscreenElement) {
     videoContainer.requestFullscreen();
+    playerControls.classList.add("fullscreen-mode");
   }
   if (document.fullscreenElement) {
     document.exitFullscreen();
+    playerControls.classList.remove("fullscreen-mode");
   }
 }
 
-console.log("Самооценка:");
-console.log("вёрстка валидная +10 → ( https://validator.w3.org/)");
-console.log(
-  "вёрстка семантическая +20 → (семантические теги HTML5: article, aside, figure, figcaption, footer, header, main, nav, section заголовки:h1, h2, h3"
-);
-console.log("для оформления СV используются css-стили +10");
-console.log(
-  "контент размещается в блоке, который горизонтально центрируется на странице. +10"
-);
-console.log("вёрстка адаптивная +10");
-console.log("есть адаптивное бургер-меню +10");
-console.log(
-  "на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10"
-);
-console.log(
-  "контакты для связи и перечень навыков оформлены в виде списка ul > li +10"
-);
-console.log(
-  "CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10"
-);
-console.log(
-  "CV содержит пример вашего кода. Для подсветки кода может использоваться js-библиотека, highlight.js +10"
-);
-console.log(
-  "CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10"
-);
-console.log("CV выполнено на английском языке +10");
-console.log(
-  "выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10"
-);
-console.log("есть видеорезюме автора CV на английском языке 😪 +0");
-console.log(
-  "дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10"
-);
-console.log("______________________");
-console.log("ИТОГО: 150 баллов");
+function keyboardShortcuts(event) {
+  const { key } = event;
+  switch (key) {
+    case " ":
+      togglePlayPause();
+      break;
+    case "m":
+      toggleVolume();
+      break;
+    case "f":
+      toggleFullScreen();
+      break;
+  }
+}
+
+/* 
+=============
+Listeners
+=============
+*/
+player.forEach((el) => {
+  el.addEventListener("click", togglePlayPause);
+});
+video.addEventListener("timeupdate", videoProgressUpdate);
+video.addEventListener("ended", stopVideo);
+volume.addEventListener("input", (e) => {
+  changeVulumeRange(e.target.value);
+});
+progress.addEventListener("input", videoProgressUpdate);
+playerControlsVolume.addEventListener("click", toggleVolume);
+fullScreen.onclick = toggleFullScreen;
+document.addEventListener("keyup", keyboardShortcuts);
+window.addEventListener("keydown", function (e) {
+  if (e.keyCode == 32 && e.target == document.body) {
+    e.preventDefault();
+  }
+});
