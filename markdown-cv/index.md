@@ -14,7 +14,8 @@ React, algorithms, design and development patterns, Typescript, Node.js, Next.js
 
 - HTML/CSS/Javascript
 - React/Redux/Node.js
-- Bootstrap etc./Styled Components/Responsive design
+- Bootstrap etc./Styled Components
+- Responsive design
 - Webpack/gulp/npm
 - Git/Github
 - Photoshop/Figma
