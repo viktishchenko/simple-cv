@@ -1,8 +1,6 @@
 ## **Viktor Tishchenko**
 
-+7 904 325 84 51 · Telegram · WhatsApp · Omsk, Russian Federation · <ins>web22pro@yandex.ru</ins>
-
-- preferred method of contact: <ins>mail</ins>
++7 904 325 84 51 · <ins>Telegram</ins> · Omsk, Russian Federation · <ins>web22pro@yandex.ru</ins>
 
 ### Summary
 
