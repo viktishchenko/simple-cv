@@ -515,11 +515,11 @@ address {
 }
 
 .card__image--momentum {
-  background-image: url(../images/works/momentum/momentum.png);
+  background-image: url(../images/works/momentum/momentum-sm.jpg);
 }
 
 .card__image--filter {
-  background-image: url(../images/works/photofilter/photo-filter.png);
+  background-image: url(../images/works/photofilter/photo-filter-sm.jpg);
 }
 
 .card__image--calculator {
