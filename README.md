@@ -226,3 +226,20 @@
     </td>
 </tr>
 </table>
+
+## "Angular CRUD"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>CRUD app without backend(localstorage)</li>
+            <li>angular, typescript и rxjs</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/withoutApi</li>
+            <li>in action: https://tranquil-concha-f6e106.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/angular-crud.png">
+    </td>
+</tr>
+</table>
