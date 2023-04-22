@@ -243,3 +243,20 @@
     </td>
 </tr>
 </table>
+
+## "basic Angular app with routing"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>front</li>
+            <li>angular, angular material ui, rxjs</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/front-shop</li>
+            <li>in action: https://sprightly-fudge-2435b5.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/front-shop.png">
+    </td>
+</tr>
+</table>
