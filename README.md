@@ -260,3 +260,20 @@
     </td>
 </tr>
 </table>
+
+## "Angular, bootstrap app "
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>front</li>
+            <li>angular, bootstrap, rxjs</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/city-app</li>
+            <li>in action: https://iridescent-kangaroo-076368.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/city-app.png">
+    </td>
+</tr>
+</table>
