@@ -286,11 +286,27 @@
         <ul>
             <li>front</li>
             <li>angular, material, rxjs</li>
-            <li>repo:https://github.com/viktishchenko/ang-test/tree/heroes</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/heroes</li>
             <li>in action: https://roaring-caramel-b97a20.netlify.app/</li>
     </td>
     <td width="40%">
         <img src="./assets/images/hero.png">
+    </td>
+</tr>
+</table>
+
+## "Angular, template-driven form"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>angular, bootstrap, template-driven form</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/tpd-form</li>
+            <li>in action: https://resilient-cendol-a4a9b8.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/tdf-eg.png">
     </td>
 </tr>
 </table>
