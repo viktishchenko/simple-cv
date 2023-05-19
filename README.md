@@ -310,3 +310,19 @@
     </td>
 </tr>
 </table>
+
+## "Angular and Scully blog app"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>Angular, Scully, Bootstrap</li>
+            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch2</li>
+            <li>in action: https://creative-gumption-71ec70.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/blog-app.png">
+    </td>
+</tr>
+</table>
