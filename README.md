@@ -335,7 +335,7 @@
         <ul>
             <li>Angular, Clarity, reactive form</li>
             <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch3</li>
-            <li>in action: https://lucent-rabanadas-d6a480.netlify.app/</li>
+            <li>in action: https://classy-kashata-87cb13.netlify.app/</li>
     </td>
     <td width="40%">
         <img src="./assets/images/clarity-app.png">
