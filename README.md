@@ -342,3 +342,19 @@
     </td>
 </tr>
 </table>
+
+## "Angular Universal SSR app with RxJs and Bootstrap 5"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>Angular, Bootstrap, RxJs</li>
+            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch7</li>
+            <li>in action: https://dapper-gnome-910dcb.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/universal-res.png">
+    </td>
+</tr>
+</table>
