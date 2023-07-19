@@ -358,3 +358,19 @@
     </td>
 </tr>
 </table>
+
+## "Angular-app with RxJs and Bootstrap"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>Angular, standalone, Bootstrap, RxJs</li>
+            <li>repo: https://github.com/viktishchenko/ang-basics/tree/test1</li>
+            <li>in action: https://jocular-flan-048d76.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/fin-app.png">
+    </td>
+</tr>
+</table>
