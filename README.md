@@ -374,3 +374,19 @@
     </td>
 </tr>
 </table>
+
+## "Angular, RxJs, Bootstrap app"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>Angular, RxJs, Bootstrap</li>
+            <li>repo: https://github.com/viktishchenko/ang-basics/tree/test3</li>
+            <li>in action: https://superlative-flan-fe7f1b.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/RxJs-project.png">
+    </td>
+</tr>
+</table>
