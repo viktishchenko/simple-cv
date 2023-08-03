@@ -311,7 +311,7 @@ address {
   background-color: var(--tag-color);
   border-radius: 6px;
   color: var(--color-dark);
-  /* cursor: default; */
+  cursor: pointer;
 }
 .text-light {
   color: var(--text-light);
@@ -326,10 +326,6 @@ address {
 
 .skills span {
   cursor: default;
-}
-
-.portfolio-link {
-  text-align: end;
 }
 
 .portfolio-link a {
@@ -473,8 +469,9 @@ address {
 
 /* @media only screen and (max-width: 768px) { } */
 
-.folios__item a {
+.card__link {
   display: flex;
+  margin-left: 10px;
 }
 
 .card {
@@ -545,17 +542,41 @@ address {
   font-weight: 500;
   line-height: 3.5rem;
   letter-spacing: 4px;
-  white-space: nowrap;
   text-transform: uppercase;
+}
+
+.card__link a {
+  color: #969696;
+  text-decoration: underline;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.divider {
+  margin: 0 5px;
+  color: #c3c3c3;
 }
 
 .card__text {
   flex: 1 1 auto;
-  margin-bottom: 50px;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 100;
   line-height: 2.1rem;
+}
+
+.card__tags {
+  display: flex;
+}
+
+.text-left {
+  text-align: end;
 }
 
 .education__subtitle {
