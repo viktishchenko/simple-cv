@@ -21,6 +21,23 @@
 </tr>
 </table>
 
+## Landing page "manage"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>responsive</li>
+            <li>css, css-vars, js, vite</li>
+            <li>in action: https://viktishchenko.github.io/php-init/html-pr-manage/</li>
+            <li>repo: https://github.com/viktishchenko/php-init/tree/html-layout-pr</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/manage.png">
+    </td>
+</tr>
+</table>
+
 ## "Momentum"
 
 <table>
@@ -383,7 +400,7 @@
         <ul>
             <li>Angular, RxJs, Bootstrap</li>
             <li>repo: https://github.com/viktishchenko/ang-basics/tree/test3</li>
-            <li>in action: https://superlative-flan-fe7f1b.netlify.app/</li>
+            <li>in action: https://ornate-starlight-4f1720.netlify.app/</li>
     </td>
     <td width="40%">
         <img src="./assets/images/RxJs-project.png">
