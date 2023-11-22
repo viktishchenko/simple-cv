@@ -6,13 +6,15 @@
 
 Hello, I’m a Viktor, aspiring web developer based in Omsk. I am a proactive, confident and communicatively strong person always looking ahead in the future. Now, as in
 the past few months, I am actively studying HTML, CSS, JavaScript,
-React, algorithms, design and development patterns, Typescript, Node.js, Next.js, PostgreSQL, MySQL.
+React, algorithms, design and development patterns, Angular, Typescript, Nodejs, MySQL.
 
 ### Skills
 
 - HTML/CSS/Javascript
-- React/Redux/Node.js
-- Bootstrap etc./Styled Components
+- Angular
+- React
+- Node
+- Bootstrap etc./MaterialUI/Styled Components
 - Responsive design
 - Webpack/gulp/npm
 - Git/Github
@@ -28,7 +30,7 @@ React, algorithms, design and development patterns, Typescript, Node.js, Next.js
 
 - «HTML/CSS» (w3schools)
 - «JavaScript» (learn.javascript.ru)
-- «React/Node/PostgreSQL/MySQL» (Udemy/YouTube/freeCodeCamp)
+- «Angular/React/Node/MySQL/PostgreSQL» (Udemy/YouTube/freeCodeCamp)
 - «Duolingo/Anki» (endlish)
 
 ### Language competencies
