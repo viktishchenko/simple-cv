@@ -10,16 +10,10 @@
 
 [simple portfolio list →](https://github.com/viktishchenko/simple-cv/tree/portfolio)
 
-[mail: web22pro@yandex.ru](mailto:email@domain.com)
 
 
 ---
 
 [← back to profile](https://github.com/viktishchenko)
 
-<pre>
-    learn English? just Join! it's Free!
-    https://invite.duolingo.com/BDHTZTB5CWWKTMHWWIXNRQOQTA
-</pre>
-
-- [join → → →](https://invite.duolingo.com/BDHTZTB5CWWKTMHWWIXNRQOQTA)
+[mail → : web22pro@yandex.ru](mailto:email@domain.com)
