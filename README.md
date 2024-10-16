@@ -16,4 +16,4 @@
 
 [← back to profile](https://github.com/viktishchenko)
 
-[mail → : web22pro@yandex.ru](mailto:email@domain.com)
+[mail → : web22pro@yandex.ru](mailto:web22pro@yandex.ru)
