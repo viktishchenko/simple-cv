@@ -16,4 +16,4 @@
 
 [← back to profile](https://github.com/viktishchenko)
 
-[mail → web22pro@yandex.ru](mailto:web22pro@yandex.ru)
+[mail → ](mailto:9043258451vvt@mail.ru)
