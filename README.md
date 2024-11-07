@@ -407,3 +407,20 @@
     </td>
 </tr>
 </table>
+
+## Banking app"
+
+<table width: 100% !important>
+<tr>
+    <td>
+        <ul>
+            <li>Angular, TypeScript, RxJx</li>
+            <li>UI (Figma), backend (Swagger)</li>
+        </ul>
+    </td>
+    <td width="40%">
+        commits: https://github.com/fctmetib/fct.metib.ru/commits/ui-ref?author=viktishchenko
+<!--         <img src="https://raw.githubusercontent.com/fctmetib/fct.metib.ru/7b3ce6f7340c176f7217570858c270a355700719/src/app/shared/modules/mib-ui/readmeAccets/more-info.png"> -->
+    </td>
+</tr>
+</table>
