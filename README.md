@@ -3,101 +3,183 @@
 - CV: https://viktishchenko.github.io/simple-cv/markdown-cv/
 - Portfolio: https://viktishchenko.github.io/simple-cv/html-cv/
 
-## Landing page "Productly"
+## "Banking (factoring) app"
 
-<table>
+<table width: 100% !important>
 <tr>
     <td>
         <ul>
-            <li>7 in 1 pattern, sass, bem, mixins, placeholders</li>
-            <li>adaptive: 1440/768/414/320 px </li>
-            <li>js, OOP/functional, webpack</li>
-            <li>in action: https://viktishchenko.github.io/tasks/productly/</li>
-            <li>repo: https://github.com/viktishchenko/tasks/tree/productly</li>
+            <li>Angular, TypeScript, RxJx</li>
+            <li>UI (Figma), backend (Swagger)</li>
+        </ul>
     </td>
     <td width="40%">
-        <img src="./assets/images/productly.png">
+        commits: https://github.com/fctmetib/fct.metib.ru/commits/ui-ref?author=viktishchenko
+<!--         <img src="https://raw.githubusercontent.com/fctmetib/fct.metib.ru/7b3ce6f7340c176f7217570858c270a355700719/src/app/shared/modules/mib-ui/readmeAccets/more-info.png"> -->
     </td>
 </tr>
 </table>
 
-## Landing page "manage"
+## "Angular, RxJs, Bootstrap app"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>responsive</li>
-            <li>css, css-vars, js, vite</li>
-            <li>in action: https://viktishchenko.github.io/php-init/html-pr-manage/</li>
-            <li>repo: https://github.com/viktishchenko/php-init/tree/html-layout-pr</li>
+            <li>Angular, RxJs, Bootstrap</li>
+            <li>repo: https://github.com/viktishchenko/ang-basics/tree/test3</li>
+            <li>in action: https://ornate-starlight-4f1720.netlify.app/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/manage.png">
+        <img src="./assets/images/RxJs-project.png">
     </td>
 </tr>
 </table>
 
-## "Momentum"
+## "Angular-app with RxJs and Bootstrap"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>DOM, localStorage, date/time, async/await, fetch</li>
-            <li>responsive</li>
-            <li>in action: https://viktishchenko.github.io/tasks/momentum/</li>
+            <li>Angular, standalone, Bootstrap, RxJs</li>
+            <li>repo: https://github.com/viktishchenko/ang-basics/tree/test1</li>
+            <li>in action: https://jocular-flan-048d76.netlify.app/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/momentum.png">
+        <img src="./assets/images/fin-app.png">
     </td>
 </tr>
 </table>
 
-## "Photo-filter"
+## "Angular Universal SSR app with RxJs and Bootstrap 5"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>DOM, input/output, events, date/time, e.matches()</li>
-            <li>adaptive(basic)</li>
-            <li>in action: https://viktishchenko.github.io/tasks/photo-filter/</li>
+            <li>Angular, Bootstrap, RxJs</li>
+            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch7</li>
+            <li>in action: https://dapper-gnome-910dcb.netlify.app/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/photo-filter.png">
+        <img src="./assets/images/universal-res.png">
     </td>
 </tr>
 </table>
 
-## "Calculator"
+## "Angular, Clarity, reactive form app"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>js, DOM, input/output, events, Math</li>
-            <li>adaptive(basic)</li>
-            <li>in action: https://viktishchenko.github.io/tasks/calculator/</li>
+            <li>Angular, Clarity, reactive form</li>
+            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch3</li>
+            <li>in action: https://classy-kashata-87cb13.netlify.app/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/calculator.png">
+        <img src="./assets/images/clarity-app.png">
     </td>
 </tr>
 </table>
 
-## "Tours" (react)
+## "Angular and Scully blog app"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>hooks, fetch, components</li>
-            <li>repo: https://github.com/viktishchenko/rehearsal/tree/master/projects/src/draft/02-tours</li>
-            <li>in action: https://viktishchenko.github.io/start-react/tours/</li>
+            <li>Angular, Scully, Bootstrap</li>
+            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch2</li>
+            <li>in action: https://creative-gumption-71ec70.netlify.app/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/tours.png">
+        <img src="./assets/images/blog-app.png">
+    </td>
+</tr>
+</table>
+
+## "Angular, template-driven form"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>angular, bootstrap, template-driven form</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/tpd-form</li>
+            <li>in action: https://resilient-cendol-a4a9b8.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/tdf-eg.png">
+    </td>
+</tr>
+</table>
+
+## "Angular CRUD"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>CRUD app without backend(localstorage)</li>
+            <li>angular, typescript и rxjs</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/withoutApi</li>
+            <li>in action: https://tranquil-concha-f6e106.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/angular-crud.png">
+    </td>
+</tr>
+</table>
+
+## "basic Angular app with routing"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>front</li>
+            <li>angular, angular material ui, rxjs</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/front-shop</li>
+            <li>in action: https://sprightly-fudge-2435b5.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/front-shop.png">
+    </td>
+</tr>
+</table>
+
+## "Angular, bootstrap app "
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>front</li>
+            <li>angular, bootstrap, rxjs</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/city-app</li>
+            <li>in action: https://iridescent-kangaroo-076368.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/city-app.png">
+    </td>
+</tr>
+</table>
+
+## "Angular, material CRUD"
+
+<table>
+<tr>
+    <td>
+        <ul>
+            <li>front</li>
+            <li>angular, material, rxjs</li>
+            <li>repo: https://github.com/viktishchenko/ang-test/tree/heroes</li>
+            <li>in action: https://roaring-caramel-b97a20.netlify.app/</li>
+    </td>
+    <td width="40%">
+        <img src="./assets/images/hero.png">
     </td>
 </tr>
 </table>
@@ -244,183 +326,101 @@
 </tr>
 </table>
 
-## "Angular CRUD"
+## "Tours" (react)
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>CRUD app without backend(localstorage)</li>
-            <li>angular, typescript и rxjs</li>
-            <li>repo: https://github.com/viktishchenko/ang-test/tree/withoutApi</li>
-            <li>in action: https://tranquil-concha-f6e106.netlify.app/</li>
+            <li>hooks, fetch, components</li>
+            <li>repo: https://github.com/viktishchenko/rehearsal/tree/master/projects/src/draft/02-tours</li>
+            <li>in action: https://viktishchenko.github.io/start-react/tours/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/angular-crud.png">
+        <img src="./assets/images/tours.png">
     </td>
 </tr>
 </table>
 
-## "basic Angular app with routing"
+## "Calculator"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>front</li>
-            <li>angular, angular material ui, rxjs</li>
-            <li>repo: https://github.com/viktishchenko/ang-test/tree/front-shop</li>
-            <li>in action: https://sprightly-fudge-2435b5.netlify.app/</li>
+            <li>js, DOM, input/output, events, Math</li>
+            <li>adaptive(basic)</li>
+            <li>in action: https://viktishchenko.github.io/tasks/calculator/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/front-shop.png">
+        <img src="./assets/images/calculator.png">
     </td>
 </tr>
 </table>
 
-## "Angular, bootstrap app "
+## "Photo-filter"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>front</li>
-            <li>angular, bootstrap, rxjs</li>
-            <li>repo: https://github.com/viktishchenko/ang-test/tree/city-app</li>
-            <li>in action: https://iridescent-kangaroo-076368.netlify.app/</li>
+            <li>DOM, input/output, events, date/time, e.matches()</li>
+            <li>adaptive(basic)</li>
+            <li>in action: https://viktishchenko.github.io/tasks/photo-filter/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/city-app.png">
+        <img src="./assets/images/photo-filter.png">
     </td>
 </tr>
 </table>
 
-## "Angular, material CRUD"
+## "Momentum"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>front</li>
-            <li>angular, material, rxjs</li>
-            <li>repo: https://github.com/viktishchenko/ang-test/tree/heroes</li>
-            <li>in action: https://roaring-caramel-b97a20.netlify.app/</li>
+            <li>DOM, localStorage, date/time, async/await, fetch</li>
+            <li>responsive</li>
+            <li>in action: https://viktishchenko.github.io/tasks/momentum/</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/hero.png">
+        <img src="./assets/images/momentum.png">
     </td>
 </tr>
 </table>
 
-## "Angular, template-driven form"
+## Landing page "manage"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>angular, bootstrap, template-driven form</li>
-            <li>repo: https://github.com/viktishchenko/ang-test/tree/tpd-form</li>
-            <li>in action: https://resilient-cendol-a4a9b8.netlify.app/</li>
+            <li>responsive</li>
+            <li>css, css-vars, js, vite</li>
+            <li>in action: https://viktishchenko.github.io/php-init/html-pr-manage/</li>
+            <li>repo: https://github.com/viktishchenko/php-init/tree/html-layout-pr</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/tdf-eg.png">
+        <img src="./assets/images/manage.png">
     </td>
 </tr>
 </table>
 
-## "Angular and Scully blog app"
+## Landing page "Productly"
 
 <table>
 <tr>
     <td>
         <ul>
-            <li>Angular, Scully, Bootstrap</li>
-            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch2</li>
-            <li>in action: https://creative-gumption-71ec70.netlify.app/</li>
+            <li>7 in 1 pattern, sass, bem, mixins, placeholders</li>
+            <li>adaptive: 1440/768/414/320 px </li>
+            <li>js, OOP/functional, webpack</li>
+            <li>in action: https://viktishchenko.github.io/tasks/productly/</li>
+            <li>repo: https://github.com/viktishchenko/tasks/tree/productly</li>
     </td>
     <td width="40%">
-        <img src="./assets/images/blog-app.png">
-    </td>
-</tr>
-</table>
-
-## "Angular, Clarity, reactive form app"
-
-<table>
-<tr>
-    <td>
-        <ul>
-            <li>Angular, Clarity, reactive form</li>
-            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch3</li>
-            <li>in action: https://classy-kashata-87cb13.netlify.app/</li>
-    </td>
-    <td width="40%">
-        <img src="./assets/images/clarity-app.png">
-    </td>
-</tr>
-</table>
-
-## "Angular Universal SSR app with RxJs and Bootstrap 5"
-
-<table>
-<tr>
-    <td>
-        <ul>
-            <li>Angular, Bootstrap, RxJs</li>
-            <li>repo: https://github.com/viktishchenko/book-prj/tree/master/ch7</li>
-            <li>in action: https://dapper-gnome-910dcb.netlify.app/</li>
-    </td>
-    <td width="40%">
-        <img src="./assets/images/universal-res.png">
-    </td>
-</tr>
-</table>
-
-## "Angular-app with RxJs and Bootstrap"
-
-<table>
-<tr>
-    <td>
-        <ul>
-            <li>Angular, standalone, Bootstrap, RxJs</li>
-            <li>repo: https://github.com/viktishchenko/ang-basics/tree/test1</li>
-            <li>in action: https://jocular-flan-048d76.netlify.app/</li>
-    </td>
-    <td width="40%">
-        <img src="./assets/images/fin-app.png">
-    </td>
-</tr>
-</table>
-
-## "Angular, RxJs, Bootstrap app"
-
-<table>
-<tr>
-    <td>
-        <ul>
-            <li>Angular, RxJs, Bootstrap</li>
-            <li>repo: https://github.com/viktishchenko/ang-basics/tree/test3</li>
-            <li>in action: https://ornate-starlight-4f1720.netlify.app/</li>
-    </td>
-    <td width="40%">
-        <img src="./assets/images/RxJs-project.png">
-    </td>
-</tr>
-</table>
-
-## "Banking app"
-
-<table width: 100% !important>
-<tr>
-    <td>
-        <ul>
-            <li>Angular, TypeScript, RxJx</li>
-            <li>UI (Figma), backend (Swagger)</li>
-        </ul>
-    </td>
-    <td width="40%">
-        commits: https://github.com/fctmetib/fct.metib.ru/commits/ui-ref?author=viktishchenko
-<!--         <img src="https://raw.githubusercontent.com/fctmetib/fct.metib.ru/7b3ce6f7340c176f7217570858c270a355700719/src/app/shared/modules/mib-ui/readmeAccets/more-info.png"> -->
+        <img src="./assets/images/productly.png">
     </td>
 </tr>
 </table>
