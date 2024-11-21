@@ -457,7 +457,7 @@ address {
 
 @media (max-width: 632px) {
   .folios__item {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -484,6 +484,7 @@ address {
 }
 
 .card {
+  width: 100%;
   background-color: white;
   border-radius: 0.25rem;
   display: flex;
@@ -525,7 +526,7 @@ address {
 }
 
 .card__image--calculator {
-  background-image: url(../images/works/angular/RxJs-project-ms.png);
+  background-image: url("https://placehold.jp/427x267.png?text=¯\(°_o)/¯");
 }
 
 .card__content {
@@ -542,7 +543,6 @@ address {
   font-weight: 500;
   line-height: 3.5rem;
   letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
 .card__link a {
