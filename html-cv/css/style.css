@@ -526,7 +526,7 @@ address {
 }
 
 .card__image--calculator {
-  background-image: url("https://placehold.jp/427x267.png?text=¯\(°_o)/¯");
+  background-image: url(../images/works/metib/metib.png);
 }
 
 .card__content {
