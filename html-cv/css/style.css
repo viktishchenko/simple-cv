@@ -234,6 +234,9 @@ figcaption {
 .icon-phone {
   background: url(../images/svg/phone_icon.svg) no-repeat center/contain;
 }
+.icon-telegram {
+  background: url(../images/svg/telegram.svg) no-repeat center/contain;
+}
 .icon-location {
   background: url(../images/svg/location_icon.svg) no-repeat center/contain;
 }
